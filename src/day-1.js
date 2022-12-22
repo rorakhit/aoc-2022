@@ -32,6 +32,8 @@ elfSepTotalCalories.sort(function (a, b) {
 });
 const topThree = elfSepTotalCalories.slice(-3);
 let topThreeSum = 0;
-topThree.map(x => topThreeSum += x);
+for (const topThreeElement of topThree) {
+    topThreeSum += topThreeElement;
+}
 
 console.log(topThreeSum);
