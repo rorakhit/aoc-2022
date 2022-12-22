@@ -23,5 +23,15 @@ let highestCalorie = Math.max(...elfSepTotalCalories);
 console.log(highestCalorie);
 const index = elfSepTotalCalories.indexOf(highestCalorie);
 
-
 console.log(index);
+
+// Part 2
+elfSepTotalCalories.sort(function (a, b) {
+    return a - b;
+
+});
+const topThree = elfSepTotalCalories.slice(-3);
+let topThreeSum = 0;
+topThree.map(x => topThreeSum += x);
+
+console.log(topThreeSum);
