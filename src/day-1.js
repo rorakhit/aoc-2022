@@ -26,6 +26,7 @@ const index = elfSepTotalCalories.indexOf(highestCalorie);
 console.log(index);
 
 // Part 2
+
 elfSepTotalCalories.sort(function (a, b) {
     return a - b;
 
